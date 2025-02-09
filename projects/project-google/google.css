@@ -1,0 +1,191 @@
+/*Fondo Advanced Search*/
+.badv {
+  background-color: rgb(56, 46, 56);
+}
+
+/* Contenedor principal: Todo centrado */
+.center-container {
+  display: flex;
+  flex-direction: column;    /* Ordena los elementos verticalmente */
+  align-items: center;       /* Centra horizontalmente */
+  justify-content: center;   /* Centra verticalmente */
+  height: 100vh;             /* Ocupa toda la altura de la pantalla */
+  background-color: #f9f9f9; /* Fondo claro (opcional) */
+  margin: 0;
+}
+
+/* Logo de Google */
+#google-logo {
+  width: 270px;              /* Ajusta el tamaño del logo */
+  margin-bottom: 20px;       /* Espacio debajo del logo */
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  position: relative;        /* Posiciona la lupa dentro del input */
+  width: 300px;              /* Ancho del cuadro de búsqueda */
+  margin-bottom: 20px;       /* Espacio debajo del cuadro de búsqueda */
+}
+
+/* Estilo del cuadro de texto */
+#caja {
+  width: 100%;               /* Ocupa todo el ancho del contenedor */
+  height: 40px;              /* Altura del cuadro de texto */
+  padding-left: 40px;        /* Espacio reservado para la lupa */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo de la lupa */
+#lupa {
+  position: absolute;        /* Coloca la lupa dentro del input */
+  top: 50%;                  /* Centra verticalmente */
+  left: 10px;                /* Alinea a la izquierda dentro del input */
+  transform: translateY(-50%);
+  width: 20px;               /* Tamaño de la lupa */
+  height: 20px;
+}
+
+/* Botones */
+.button-container {
+  display: flex;             /* Coloca los botones en fila */
+  gap: 10px;                 /* Espacio entre los botones */
+}
+
+button {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#search {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*Im Feeling Lucky Button*/
+#lucky {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size:15px;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+#search {
+  background-color: #4285f4;
+  color: white;
+}
+
+#search:hover {
+  background-color: #095cec;
+}
+
+#lucky {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+#lucky:hover {
+  background-color: #e0e0e0;
+}
+
+/*Cajas Desplegables*/
+select {
+  display: block;    
+  width: 200px;
+  height: 27px;      
+  margin-bottom: 25px; 
+}
+
+/*Cajas Find Pages With*/
+form {
+  position: relative; 
+  width: 300px;
+}
+
+/*Find Pages y Then NArrow your Result*/
+#header1, #header2 {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/*Boton Azul Advanced Search*/
+#botonadv {
+  cursor: pointer;
+  background-color: #72a3f8;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+#link1, #link2 {
+  float: right;          
+  width: 130px;
+  height: 100px;
+  text-align:right
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  
+}
+
+body { 
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+
+.header-links a {
+  text-decoration: none; 
+  color: #4285f4; 
+  font-size: 18px; 
+}
+
+.header-links a:hover {
+  text-decoration: underline; 
+}
+/*Empieza CSS para Advanced*/
+
+#link3, #link4 {
+  float: right;          
+  width: 130px;
+  height: 100px;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items:center;
+  text-decoration: none;
+  color: #4285f4;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+
+}
+
+/*Palabra Advanced Search*/
+#advsearch {
+  position:relative;
+  top: 140px;
+  left: 130px;
+  font-weight: bold;
+}
+
+
+
+
+      
+
+
+

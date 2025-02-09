@@ -1,0 +1,91 @@
+/* Contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+#adv {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+}
+
+/* Contenedor general del formulario */
+.find-container,
+#listas {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Estructura de las filas */
+.find-container div,
+#listas div {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    margin-bottom: 15px; /* Espaciado entre líneas */
+}
+
+/* Textos (labels) */
+.find-container label,
+#listas label {
+    flex: 0 0 200px; /* Espacio fijo para las etiquetas */
+    text-align: left; /* Alineación del texto */
+    margin-right: 10px; /* Espaciado entre etiqueta e input */
+}
+
+/* Inputs de texto */
+.find-container input[type="text"],
+#listas select {
+    flex: 1; /* Toma el espacio restante */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Botón Advanced Search */
+#botonadv {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#botonadv:hover {
+    background-color: #005bb5;
+}
+
+/*Palabra Advanced Search*/
+#advsearch {
+    position:relative;
+    top: 140px;
+    left: 130px;
+    font-weight: bold;
+  }
+
+  #link3, #link4 {
+    float: right;          
+    width: 130px;
+    height: 100px;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items:center;
+    text-decoration: none;
+    color: #4285f4;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  
+  }

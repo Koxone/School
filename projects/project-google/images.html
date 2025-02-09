@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para el CSS -->
+    <link rel="stylesheet" href="google.css">
+    <!-- Termina link de CSS -->
+
+    <title>Google Image Search</title>
+    
+</head>
+
+<body>
+        <!--Links Externos-->
+        <a id="link1" href="index.html" target="_blank">Google Search</a>
+        <a id="link2" href="advanced.html" target="_blank">Google Advanced Search</a>
+
+        <!-- Link para imagen de Google -->
+    
+        <div class="center-container">
+            <!-- Logo de Google -->
+            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        
+            <!-- Contenedor de búsqueda -->
+            <div class="search-container">
+                <form id="image-search-form">
+                <input id="caja" type="text" placeholder="Image Search" name="q">
+                <img id="lupa" src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Lupa">
+            </div>
+            
+            <!-- Botones -->
+            <div class="button-container">
+                <button id="search" type="submit">Google Image Search</button>
+                <button id="lucky" type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        </form>
+
+        <!--Javascript para redirigir la busqueda directa al resultado de Google Images-->
+        <script>
+            // Función para Google Image Search
+            document.getElementById('image-search-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita el envío predeterminado del formulario
+                const query = document.getElementById('caja').value; // Captura el texto ingresado
+                if (query) {
+                    // Redirige directamente a los resultados de Google Images
+                    window.location.href = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
+                }
+            });
+        </script>
+        </body>
+        </html>
+<!--Regreso-->
