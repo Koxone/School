@@ -1,0 +1,751 @@
+:root {
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-700: 56px;
+    --spacing-900: 72px;
+    --spacing-1100: 88px;
+    --colors-white: #ffffff;
+    --colors-black: #000000;
+    --spacing-1200: 96px;
+    --spacing-1300: 104px;
+    --spacing-1600: 128px;
+    --colors-grey-300: #acc1de;
+    --colors-grey-500: #5e6e85;
+    --colors-blue-100: #e1e7fe;
+    --colors-blue-300: #b3d3f1;
+    --colors-blue-500: #345ff6;
+    --colors-blue-900: #253347;
+    --spacing-1800: 144px;
+  }
+
+  :root {
+    /* Text Preset 1 */
+    --text-preset-1-size: 64px;
+    --text-preset-1-line-height: 110%;
+    --text-preset-1-letter-spacing: -5%;
+    --text-preset-1-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 2 */
+    --text-preset-2-size: 48px;
+    --text-preset-2-line-height: 110%;
+    --text-preset-2-letter-spacing: -5%;
+    --text-preset-2-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 3 */
+    --text-preset-3-size: 32px;
+    --text-preset-3-line-height: 110%;
+    --text-preset-3-letter-spacing: -5%;
+    --text-preset-3-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 4 */
+    --text-preset-4-size: 24px;
+    --text-preset-4-line-height: 120%;
+    --text-preset-4-letter-spacing: -5%;
+    --text-preset-4-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 5 */
+    --text-preset-5-size: 20px;
+    --text-preset-5-line-height: 120%;
+    --text-preset-5-letter-spacing: -5%;
+    --text-preset-5-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 6 */
+    --text-preset-6-size: 16px;
+    --text-preset-6-line-height: 150%;
+    --text-preset-6-letter-spacing: 0%;
+    --text-preset-6-weight: 600; /* Inter Semi Bold */
+
+    /* Text Preset 7 (Regular) */
+    --text-preset-7-size: 16px;
+    --text-preset-7-line-height: 150%;
+    --text-preset-7-letter-spacing: 0%;
+    --text-preset-7-weight: 400; /* Inter Regular */
+
+    /* Text Preset 8 (Bold) */
+    --text-preset-8-size: 14px;
+    --text-preset-8-line-height: 150%;
+    --text-preset-8-letter-spacing: 0%;
+    --text-preset-8-weight: 700; /* Inter Bold */
+
+    /* Text Preset 9 (Regular) */
+    --text-preset-9-size: 14px;
+    --text-preset-9-line-height: 150%;
+    --text-preset-9-letter-spacing: 0%;
+    --text-preset-9-weight: 400; /* Inter Regular */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+.preset-2-inter-semibold {
+  font-size: var(--text-preset-2-size);
+  font-weight: var(--text-preset-2-weight);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  color: var(--colors-blue-900);
+}
+
+.preset-6-regular {
+  font-size: var(--text-preset-6-size);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: var(--text-preset-6-letter-spacing);
+  color: var(--colors-grey-500);
+}
+
+.preset-4 {
+  font-size: var(--text-preset-4-size);
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  color: var(--colors-blue-900);
+}
+
+.unit {
+  position: absolute;
+  right: 8%; 
+  top: 62%; 
+  transform: translateY(-50%); 
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  color: var(--colors-blue-500);
+}
+
+.preset-4-inter-semibold-white {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.preset-7-regular-white {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: white;
+}
+
+.preset-6-semibold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: white;
+}
+
+.result {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -2.4px;
+  color: white;
+}
+
+.preset-3-inter-semibold {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1.6px;
+  color: var(--colors-blue-900);
+}
+
+.preset-6-regular {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--colors-grey-500);
+}
+
+.preset-4-inter-semibold {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  color: var(--colors-blue-900);
+}
+
+.preset-5-inter-semibold {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -1px;
+  margin-bottom: 17px;
+  margin-left: 16px;
+  color: var(--colors-blue-900);
+}
+.main-container {
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.general-container {
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-1, .container-2, 
+.container-3, .container-4, 
+.calculator-container, .text-container-2, 
+.container-3, .result-container, 
+.main-container, .general-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  padding: 32px 24px 61px 24px;
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  background: var(--colors-gradient-1, linear-gradient(90deg, rgba(214, 252, 254, 0.00) 0%, #D6E6FE 100%));
+  background-size: 375px 640px;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 32px;
+}
+
+.header-container img {
+  width: 40px;
+}
+
+.text-container-1 {
+  text-align: center;
+}
+
+.text-container-1 .preset-2-inter-semibold {
+  margin-bottom: 24px;
+}
+
+.text-container-1 .preset-6-regular {
+  margin-bottom: 32px;
+}
+
+.calculator-container {
+  width: 328px;
+  height: 588px;
+  border-radius: 16px;
+  background: var(--colors-white, #FFF);
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+.input-container {
+  position: relative;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--colors-grey-500);
+}
+
+#height, #weight {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  padding-left: 24px;
+  color: var(--colors-grey-500);
+  text-align: left;
+  border: 1px solid var(--colors-grey-500);
+  border-radius: 12px;
+  width: 280px;
+  height: 77px;
+  background: var(--colors-white);
+  margin-top: 8px;
+}
+
+#height {
+  margin-bottom: 16px;
+}
+
+#name-metric, #name-imperial {
+  color: var(--colors-blue-900, #253347);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  padding: 16px;
+  margin-top: 4px;
+}
+
+.input-container-imp-height,
+.input-container-imp-weight {
+  display: flex;
+  position: relative;
+  gap: 16px;
+}
+
+.height-imp, .weight-imp {/*Placeholder*/
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  padding-left: 24px;
+  color: var(--colors-grey-500);
+  text-align: left;
+  border: 1px solid var(--colors-grey-500);
+  border-radius: 12px;
+  width: 132px;
+  height: 77px;
+  background: var(--colors-white);
+  margin-top: 8px;
+}
+
+.unit-imp-ft, .unit-imp-inch, 
+.unit-imp-st, .unit-imp-lbs {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.2px;
+  color: var(--colors-blue-500);
+}
+
+.unit-imp-ft, .unit-imp-st {
+  left: 33%;
+  top: 36%;
+}
+
+.unit-imp-inch, .unit-imp-lbs {
+  top: 36%;
+  left: 86%;
+}
+
+.container-2 {
+  width: 100%;
+  height: auto;
+}
+
+.hero-container  img {
+  width: 100%;
+}
+
+.text-container-2 {
+  padding: 48px 23.5px 61.61px 23.5px;
+}
+
+.container-3 {
+  padding: 56px 24px;
+}
+
+.container-3 img {
+  margin-bottom: 32px;
+}
+
+.container-4 {
+  padding: 86px 24px 92px 24px;
+}
+
+.text-container-4 .preset-3-inter-semibold {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.text-container-4 .preset-6-regular {
+  margin-bottom: 56px;
+  text-align: center;
+  width: 327px;
+}
+
+.personal-data-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.4);
+}
+
+.preset-6-regular-left {
+  margin-left: -30px;
+  color: var(--colors-grey-500, #5E6E85);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.line {
+  display: none;
+}
+
+/*----------------------------------------------CALCULATOR-------------------------------*/
+
+.imperial {
+  display: none;
+}
+
+.metric {
+  display: block;
+}
+
+.welcome-container {
+  display: block;
+}
+
+.bmi-container {
+  display: none;
+}
+
+.welcome-container {
+  width: auto;
+  height: auto;
+}
+
+.result-container {
+  padding: 32px;
+  margin-top: 24px;
+  width: 280px;
+  max-width: 280px;
+  height: auto;
+  max-height: 257px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: var(--colors-blue-500);
+}
+
+.input-general-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-container {
+  color: var(--colors-white, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.bmi {
+  color: var(--colors-white, #FFF);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+#ideal-weight {
+  color: var(--colors-white, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#result-bmi {
+  color: var(--colors-white, #FFF);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 110%; /* 70.4px */
+  letter-spacing: -3.2px;
+}
+
+/*-----------------------------------------------DESKTOP---------------------------------*/
+
+@media (min-width: 1024px) {
+
+
+
+.main-container, .general-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-areas: 
+  'header header'
+  'text calculator';
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 64px auto;
+  align-content: center;
+  width: 1160px;
+  max-width: 1160px;
+  height: 710px;
+  max-height: 710px;
+  background: none;
+  padding: 0px;margin: 90px 140px 82px 140px;
+}
+
+.container-1::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Expande el fondo en todo el elemento */
+  background: var(--colors-gradient-1, linear-gradient(90deg, rgba(214, 252, 254, 0.00) 0%, #D6E6FE 100%));
+  width: 1002px;
+  height: 737px;
+  background-repeat: no-repeat;
+  border-radius: 50px 50px 0px 0px; /* Aplica border-radius solo al fondo */
+  z-index: -1; /* Lo pone detrás del contenido */
+}
+
+.header-container {
+  grid-area: header;
+  width: 100%;
+  height: 60px;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+.header-container img {
+  width: 64px;
+}
+
+.text-container-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: text;
+  width: 564px;
+  height: 268px;
+  text-align: left;
+  margin-top: -200px;
+}
+
+.text-container-1 .preset-2-inter-semibold {
+  font-size: 64px;
+  padding-right: 80px;
+}
+
+.text-container-1 .preset-6-regular {
+  width: 465px;
+}
+
+.calculator-container {
+  grid-area: calculator;
+  padding: 32px;
+  width: 564px;
+  height: 622px;
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.data-container {
+  width: 500px;
+  height: auto;
+}
+
+#name-metric {
+  margin-right: 152px;
+}
+
+.input-general-container {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: auto;
+  gap: 24px;
+}
+
+.input-container-imp-height, .input-container-imp-weight {
+  width: 238px;
+}
+
+.height-imp, .weight-imp {
+  width: 238px;
+}
+
+.unit-imp-ft, .unit-imp-st {
+  left: 84%;
+  top: 36%;
+}
+
+.unit-imp-inch, .unit-imp-lbs {
+  top: 36%;
+  left: 189%;
+}
+
+.unit {
+  top: 62%;
+}
+
+#name-metric,
+#name-imperial {
+  margin-bottom: 5px; /* Separa estos labels del siguiente contenido */
+  display: inline-block; /* Asegura que no se rompa el diseno */
+}
+
+#height, #weight {
+  width: 238px;
+  height: 61px;
+  margin-top: 8px;
+}
+
+.result-container {
+  width: 500px;
+  max-width: 500px;
+  height: 130px;
+  max-height: 149px;
+  padding: 32px;
+  margin: 0px;
+  border-radius: 100px 999px 999px 100px;
+}
+
+.bmi-container {
+  gap: 98px;
+  align-items: center;
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 149px;
+}
+
+.welcome-container {
+  display: block;
+}
+
+.bmi-container {
+  display: none;
+}
+
+input[type="radio"] {
+  width: 31px;
+  height: 31px;
+  accent-color: #007BFF; /* Cambia el color cuando está seleccionado */
+  cursor: pointer;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  height: 31px;
+  margin-bottom: 32px;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 1160px;
+  height: 533px;
+  justify-content: space-between;
+}
+
+.hero-container img{
+  width: 468px;
+  height: 533px;
+  object-fit: contain;
+}
+
+.text-container-2 {
+  display: grid;
+  width: 465px;
+  height: 306px;
+  padding: 0;
+}
+
+.text-container-2 .preset-3-inter-semibold {
+  font-size: 48px;
+  width: 465px;
+  height: 106px;
+  letter-spacing: -2.4px;
+  margin: 0;
+}
+
+.text-container-2 .preset-6-regular {
+  font-size: 16px;
+  width: 465px;
+  height: 168px;
+  margin: 0;
+}
+
+.container-3 {
+  flex-direction: row;
+  padding: 92.5px 102.5px;
+  gap: 32px;
+}
+
+.text-container-4 {
+  padding: 115px 140px;
+  padding: 1rem;
+  max-width: 1160px;
+  margin: 0 auto 7.5rem;
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 32px 1fr 1fr 32px 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.limitations-container {
+  width: 564px;
+  max-width: 564px;
+  grid-area: 1/1/2/7;
+}
+
+.limitations-container .preset-3-inter-semibold {
+  font-size: 48px;
+  text-align: left;
+  width: 564px;
+  height: 53px;
+}
+
+.limitations-container .preset-6-regular {
+  width: 564px;
+  text-align: left;
+}
+
+.personal-data-container:nth-of-type(2) { /*Gender*/
+  grid-area: 1/7/2/11;
+  width: 365px;
+  height: 232px;
+}
+
+.line {
+  display: block;
+  grid-area: 2/2/3/4;
+  margin-top: 1.18rem;
+}
+
+.personal-data-container:nth-of-type(3) {/*Age*/
+  grid-area: 2/4/3/8;
+  width: 365px;
+  height: 184px;
+}
+.personal-data-container:nth-of-type(4) {/*Muscle*/
+  grid-area: 2/9/3/12;
+  width: 365px;
+  height: 184px;
+}
+.personal-data-container:nth-of-type(5) {/*Pregnancy*/
+  grid-area: 3/3/4/5;
+  width: 365px;
+  height: 232px;
+}
+.personal-data-container:nth-of-type(6) {/*Race*/
+  grid-area: 3/6/4/10;
+  width: 365px;
+  height: 232px;
+}
+
+
+
+}

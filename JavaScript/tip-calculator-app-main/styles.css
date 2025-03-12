@@ -1,0 +1,467 @@
+:root {
+    --primary-color: #00474B;
+    --secondary-color: #26C2AE;
+    --accent-color: #547878;
+    --background-color: #C5E4E7;
+}
+
+* {
+    font-family: 'Space Mono';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sm-text {
+    color: #5E7A7D;
+    font-family: "Space Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.simbol {
+    color: #5E7A7D;
+    font-family: "Space Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.amount {
+    color: #00474B;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-tip {
+    border-radius: 0.3125rem;
+    background: #00474B;
+    border: 0.0625rem solid #00474B;
+    width: 9.1644rem;
+    height: 3rem;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-tip:hover {
+    background-color: var(--secondary-color);
+    color: #00474B;
+    border: 0.0625rem solid #00474B;
+    cursor: url(images/pointer.svg) 10 10, auto;
+}
+
+.reset {
+    color: #00474B;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 17.5625rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #26C2AE;
+    background: #26C2AE;
+    cursor: url(images/pointer.svg) 10 10, auto;
+}
+
+.reset:hover {
+    background-color: #9FE8DF;
+    color: #00474B;
+    border: 0.0625rem solid #9FE8DF;
+    cursor: url(images/pointer.svg) 10 10, auto;
+}
+
+.reset:disabled {
+    background-color: #26C2AE ; /* !important fuerza el cambio si hay reglas previas */
+    cursor: not-allowed; /* Opcional: cambia el cursor para indicar que está deshabilitado */
+    opacity: 0.6; /* Opcional: reduce la opacidad para enfatizar que está deshabilitado */
+}
+
+.custom-tip {
+    border-radius: 0.3125rem;
+    width: 9.1644rem;
+    height: 3rem;
+    color: #00474B;
+    text-align: center;
+    border: 0.0625rem solid #547878;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.people-result {
+    display: inline-block;
+    width: 4.5176rem;
+    color: #00474B;
+    text-align: right;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid var(--accent-color);
+}
+
+.xs-text {
+    color: #7F9D9F;
+    font-family: "Space Mono";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.number-container {
+    color: #26C2AE;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.0417rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 23.4375rem;
+}
+
+.header-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 3.125rem 9rem 2.5rem 9rem;
+    background-color: #C5E4E7;
+    height: 10rem;
+    z-index: 1;
+}
+
+.header-container img {
+    object-fit: contain;
+}
+
+.white-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5625rem 1.5625rem 0rem 0rem;
+    background: #FFF;
+    box-shadow: 0rem 2rem 2.6875rem 0rem rgba(79, 166, 175, 0.20);
+    margin-top: -1rem;
+}
+
+#bill {
+    margin-bottom: 0.375rem;
+}
+
+.simbol {
+    margin-left: 1.2038rem;
+    display: inline-block;
+}
+
+.bill-amount {
+    padding-right: 1.0625rem;
+}
+
+#dollar {
+    font-size: 1.5625rem;
+    color: var(--accent-color);
+    margin-right: 10.9375rem;
+    opacity: 70%;
+}
+
+.tip-selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.percentages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.0625rem;
+}
+
+.calculation-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5625rem;
+    padding: 2.3125rem 1.375rem 1.5rem 1.5rem;
+    background-color: var(--primary-color);
+}
+
+.tip-amount-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.total-amount-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.tip-amount-container .text-container .sm-text {
+    color: white;
+}
+.total-amount-container .text-container .sm-text {
+    color: white;
+}
+
+/*------------------------------------------------JAVASCRIPT-----------------------------*/
+
+.button-tip:disabled {
+    pointer-events: none; /* Desactiva interacciones (incluyendo hover y clics) */
+    opacity: 0.5; /* Hace que el botón se vea más apagado */
+}
+
+.button-tip:disabled:hover {
+    background-color: inherit; /* Evita que el color de fondo cambie en hover */
+    color: inherit; /* Evita que el color del texto cambie */
+    cursor: default; /* Cambia el cursor a uno normal */
+}
+
+.people-result:disabled {
+    border: none;
+    pointer-events: none; /* Desactiva interacciones (incluyendo hover y clics) */
+    opacity: 0.5; /* Hace que el botón se vea más apagado */
+}
+
+.custom-tip:disabled {
+    border: none;
+    pointer-events: none; /* Desactiva interacciones (incluyendo hover y clics) */
+    opacity: 0.5; /* Hace que el botón se vea más apagado */
+}
+
+.button-tip.active {
+    background-color: var(--secondary-color);
+    color: #00474B;
+    border: 0.0625rem solid #00474B;
+    cursor: url(images/pointer.svg) 10 10, auto;
+}
+
+
+/*----------------------------------------------------DESKTOP-----------------------------------------------------*/
+
+@media (min-width: 90rem) {
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #C5E4E7;
+}
+
+.general-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    margin-top: -5.4375rem;
+}
+
+.white-container {
+    display: grid;
+    width: 57.5rem;
+    height: 30.0625rem;
+    grid-template-areas: 
+    'bill space calculator'
+    'tip space calculator'
+    'people space calculator';
+    border-radius: 1.5625rem;
+    margin: 0;
+    margin-top: 5.4375rem;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 3rem;
+}
+
+.bill-container {
+    width: 23.6875rem;
+    grid-area: bill;
+    margin-bottom: 2.5rem;
+}
+
+.tip-selection-container {
+    grid-area: tip;
+}
+
+.people-container {
+    grid-area: people;
+}
+
+.calculation-container {
+    grid-area: calculator;
+}
+
+.space {
+    grid-area: space;
+    width: 3rem;
+    height: 100%;
+}
+
+.amount {position: relative;
+    width: 23.6875rem;
+}
+
+#bill-amount {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #5E7A7D;
+    color: #00474B;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#bill-amount:focus {
+    border: 0.125rem solid #26C2AE;
+    outline: none;
+}
+
+#dollar {
+    position: absolute;
+    top: 1.0625rem;
+    left: 1.25rem;
+}
+
+.amount.container {
+    width: 23.6875rem;
+}
+
+.tip-selection-container {
+    width: 23.6875rem;
+    height: 9.5rem;
+}
+
+.percentages-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    max-width: 100%;
+    height: 7rem;
+    gap: 0.875rem;
+}
+
+.custom-tip {
+    width: 7.3125rem;
+    height: 3rem;
+}
+
+.button-tip {
+    width: 7.3125rem;
+    height: 3rem;
+}
+
+.number-container {
+    font-size: 3rem;
+}
+
+.calculation-container {
+    width: 25.8125rem;
+    height: 26.0625rem;
+}
+
+.tip-amount-container, .total-amount-container {
+    align-items: center;
+}
+
+.total-amount-container {
+    margin-bottom: 7.625rem;
+}
+
+.reset-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    width: 20.8125rem;
+}
+.second {
+    position: relative;
+    padding: 0;
+}
+
+#people-icon {
+    position: absolute;
+    left: 1rem;
+}
+
+.people-container {
+    width: 23.6875rem;
+    height: 4.875rem;
+    gap: 0.375rem;
+    margin-top: 2.5rem;
+}
+
+.people-result {
+    width: 100%;
+}
+
+.people-result:focus {
+    outline: none;
+    border: 0.125rem solid #26C2AE;
+}
+
+.custom-tip:focus {
+    border: 0.125rem solid #26C2AE;
+    outline: none;
+}
+    
+}
+

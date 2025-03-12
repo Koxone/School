@@ -1,0 +1,468 @@
+:root {
+    /* Green */
+    --green: #54E6AF;
+  
+    /* Blue Shades */
+    --blue-950: #121725;
+    --blue-900: #2C344B;
+    --blue-600: #5A668A;
+    --blue-300: #C2CBE5;
+  
+    /* White */
+    --white: #FFFFFF;
+  
+    /* Red */
+    --red: #FB3E3E;
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CHIVO';
+  }
+
+  .error-message {
+    display: none;
+  }
+
+.lg-text {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; 
+  text-transform: uppercase;
+  color: white;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.sm-text {
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+  margin-bottom: 2.5rem;
+  color: var(--blue-300);
+}
+
+.main-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;/*Hace que los hijos respeten el padding*/
+  align-items: center;
+  padding: 2.25rem;/*Le da un margen general a los hijos en vez de poner margen a cada uno*/
+  width: 100%; /*100% de la ventana*/
+  max-width: 100%;/*No se pasa del 100% de la ventana*/
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.5); /* Azul con opacidad */
+  background-blend-mode: multiply; 
+  background-image: url(assets/mobile/image-host.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 90rem;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 6.875rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.5rem;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 1.0625rem; 
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+
+.icon {
+  flex-grow: 1; /* Hace que los iconos crezcan uniformemente */
+  max-width: calc(100% / 4); /* Tamaño máximo relativo al contenedor */
+  height: 100%; /* Se ajusta a la altura del contenedor */
+  object-fit: contain; /* Mantiene la proporción sin recortar */
+  cursor: pointer;
+}
+
+.text-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.mail-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.hidden-element {
+  display: none;
+}
+
+input {
+  width: 100%;
+  border:  0.0625rem solid var(--blue-900);
+  display: flex;
+  height: 2.75rem;
+  padding-left: 1.75rem;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 62.4375rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%; 
+  background: var(--color-blue-900, #2C344B);
+  margin-bottom: 0.5rem;
+}
+
+.mail-container.error .input {
+  border: 2px solid #FB3E3E;
+}
+
+button {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem var(--spacing-400, 2rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 0.5rem);
+  border-radius: 1.75rem;
+  background: var(--color-green, #54E6AF);
+  border:  0.0625rem solid var(--green, #54E6AF);
+  box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(84, 230, 175, 0.14);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%; 
+  cursor: pointer;
+}
+
+.mail-container.error .request-button {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem var(--spacing-400, 2rem);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 0.5rem);
+  border-radius: 1.75rem;
+  background: var(--color-green, #54E6AF);
+  border:  0.0625rem solid var(--green, #54E6AF);
+  box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(84, 230, 175, 0.14);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%; 
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), var(--color-green, #54E6AF);
+  box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(84, 230, 175, 0.14);
+}
+
+.mail-container.error .error-message {
+  display: flex;
+  color: #FB3E3E;
+  margin-left: 5%;
+}
+
+
+/*---------------------------------------Tablet-------------------------------------*/
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+
+  body {
+    background-color: var(--blue-950);
+  }
+
+  .main-container {
+    background-image: url(assets/tablet/image-host.jpg);
+    background-size: 30.625rem 54.25rem;
+    background-position-x: 110%;
+    background-color: var(--blue-950);
+    background-blend-mode: unset;
+    align-items: flex-start;
+    padding: 0;
+    
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+
+  .landing-container {
+    width: 37rem;
+    height: 44.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 9.75rem;
+    margin-left: 2.75rem;
+  }
+
+  .content-container {
+    padding: 0;
+    margin-top: 6.5rem;
+    width: 34.75rem;
+    height: 100vh;
+    background-color: var(--blue-950);
+  }
+
+  .brands-container {
+    display: flex;
+    justify-content: flex-start;
+    order: 2;
+    width: 34.2281rem;
+    height: 1.8125rem;
+    margin: 0;
+  }
+
+  .icon {
+    flex-grow: unset;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .text-container {
+    width: 33rem;
+    height: 17.4375rem;
+    margin-top: 5.5rem;
+  }
+
+  .lg-text {
+    text-align: left;
+    height: 10.875rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .sm-text {
+    text-align: left;
+    width: 28rem;
+    height: 5.0625rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+
+  .mail-container {
+    order: 1;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    justify-content: center;
+  }
+
+  input {
+    width: 28rem;
+    height: 3.25rem;
+  }
+
+  .request-button {
+    position: absolute;
+    top: 6%;
+    left: 49%;
+    width: 10.8125rem;
+    height: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .mail-container.error .request-button {
+    position: absolute;
+    top: 6%;
+    left: 49%;
+    width: 10.8125rem;
+    height: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+}
+
+/*-----------------------------------------DESKTOP-------------------------------------------*/
+
+@media (min-width: 64.0625rem) and (max-width: 160.3125rem) {
+  
+  body {
+    background-color: var(--blue-950);
+    
+  }
+
+  .main-container {
+    background-image: url(assets/desktop/image-host.jpg);
+    background-size: 56rem 654px;
+    background-position-x: 110%;
+    background-position-y: 51%;
+    background-color: var(--blue-950);
+    background-blend-mode: unset;
+    align-items: flex-start;
+    padding: 0;
+    height: calc(100vh - 5.3125rem);
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+
+  .landing-container {
+    width: 37rem;
+    height: 44.5rem;
+    align-items: flex-start;
+    margin-top: 125px;
+    margin-left: 160px;
+  }
+
+  .content-container {
+    padding: 0;
+    width: 46rem;
+    height: 30.875rem;
+    background-color: var(--blue-950);
+    background-size: 46rem 30.875rem;
+    margin: 0;
+    margin-top: 6.5rem;
+  }
+
+  .brands-container {
+    display: flex;
+    justify-content: flex-start;
+    order: 2;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--blue-950);
+  }
+
+  .icon {
+    flex-grow: unset;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .lg-text {
+    width: 41.5625rem;
+    height: 9.375rem;
+  }
+
+  .sm-text {
+    width: 28rem;
+    height: auto;
+  }
+
+  .text-container {
+    width: 41.5625rem;
+    height: 13.8125rem;
+    margin-top: 5.5rem;
+  }
+
+  .lg-text {
+    text-align: left;
+    height: auto;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .sm-text {
+    text-align: left;
+    width: 28rem;
+    height: 5.0625rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .mail-container {
+    order: 1;
+    margin-top: 2.5rem;
+    margin-bottom: 3.125rem;
+    position: relative;
+    justify-content: center;
+  }
+
+  input {
+    width: 28rem;
+    height: 3.25rem;
+  }
+
+  .request-button {
+    position: absolute;
+    top: 5%;
+    left: 37%;
+    width: 10.8125rem;
+    height: 2.75rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+
+
+/*----------------------------------ERROR MESSAGE-------------------------------*/
+
+.mail-container.error .input {
+    border: 2px solid #FB3E3E;
+    display: flex;
+    height: 54px;
+    padding-left: 1.75rem;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 62.4375rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%; 
+    background: var(--color-blue-900, #2C344B);
+    margin-bottom: 0.5rem;
+}
+
+.mail-container.error .request-button {
+  position: absolute;
+  top: 6%;
+  left: 36.6%;
+  width: 10.8125rem;
+  height: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.mail-container.error .error-message {
+  display: flex;
+  color: #FB3E3E;
+  margin-left: 5%;
+}
+}
+

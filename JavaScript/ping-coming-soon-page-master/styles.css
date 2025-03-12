@@ -1,0 +1,233 @@
+* {
+    font-family: 'Libre Franklin';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lg-text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #969696;
+    text-align: center;
+}
+
+.sm-text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+    color: #15202A;
+    text-align: center;
+}
+
+.soon {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #15202A;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: normal;
+    color: #969696;
+    text-align: center;
+}
+
+.input::placeholder {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #B8C7ED;
+    text-align: left;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    padding: 81px 27px 37px 27px;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 72px;
+}
+
+.logo {
+    margin-bottom: 32px;
+}
+
+.text-landing .lg-text {
+    margin-bottom: 15px;
+}
+
+.text-landing .sm-text {
+    margin-bottom: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form .input {
+    width: 281px;
+    height: 40px;
+    border-radius: 28px;
+    border: 1px solid #c2d3ff;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.00);
+    padding: 10px 135px 10px 32px;
+}
+
+form .button-notify {
+    border-radius: 28px;
+    height: 40px;
+    background: #4C7BF3;
+    border: 1px solid #4C7BF3;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.graphic img {
+    width: 320px;
+    height: auto;
+    margin-bottom: 120px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 11.71px;
+    margin-bottom: 27px;
+}
+
+.icons img {
+    border: 1px solid #969696;
+    border-radius: 50%;
+}
+
+/*----------------------------------ERROR MESSAGE-------------------*/
+
+.form.error {
+    position: relative;
+}
+
+.error-message {
+    display: none;
+}
+
+.form.error .error-message {
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 14%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ff5466;
+    letter-spacing: .15px;
+}
+
+.form.error .input {
+    border: 1px solid #ff5466;
+}
+
+.form.error .input:focus {
+    border-color: #FF5466;
+    outline-color: #FF5466;
+}
+
+/*--------------------------------------------------------Desktop-----------------------------------------------*/
+
+@media (min-width: 1024px) and (max-width: 2565px) {
+
+    .main-container {
+        padding: 40px 27px 20px 27px;
+        height: 100vh; /* Asegura que el contenedor principal ocupe toda la altura de la pantalla */
+        justify-content: space-between; /* Distribuye el espacio verticalmente */
+    }
+
+    .landing-container {
+        margin-bottom: 30px;
+    }
+
+    .landing-container .lg-text {
+        font-size: 48px;
+    }
+
+    .sm-text {
+        font-size: 20px;
+    }
+
+    .soon {
+        font-size: 48px;
+    }
+
+    form  {
+        width: 421px;
+        flex-direction: row;
+    }
+
+    .button-notify {
+        width: 200px;
+        height: 56px;
+    }
+
+    .graphic img {
+        width: auto;
+        height: 40vh; /* Ajusta la altura de la imagen al 40% de la altura de la pantalla */
+        margin-bottom: 30px;
+    }
+
+    .form.error .error-message {
+        display: block;
+        position: absolute;
+        top: 110%;
+        left: 8%;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #ff5466;
+        letter-spacing: .15px;
+    }
+
+
+}
+
+
+
